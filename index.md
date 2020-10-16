@@ -1,4 +1,5 @@
-<head>
+<html>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="generator" content="Form Designer 4.0.551">
@@ -33,7 +34,7 @@
 
   </style>
 </head>
-
+<body class="no-js">
   <form class="form-container order-form" data-abide="" novalidate="" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSefz9158Q-t3yBaMUAe-RmcPN0RFzgEmTVNz_bL5QewRpRU9g/formResponse" method="post">
     <p class="paragraph header-graf"><span class="paragraph-text-4"><span class="paragraph-text-4">Choose which fruits and vegetables you would like to receive. You have<span class="paragraph-text-3"> six tokens</span> to spend.&nbsp;</span></span></p><label class="label-container short-form">
       <span class="text-element label">Student Name</span><input value="" type="text" name="entry.1955114947" required="required" pattern="^[0-9a-zA-Z]+$" autocomplete="on" placeholder="Your name" maxlength="150" class="studentname">
@@ -296,6 +297,9 @@
   <script src="js/what-input.min.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>$(document).foundation();</script>
+  
+  </body>
+
 
 <script type="text/javascript">
   
