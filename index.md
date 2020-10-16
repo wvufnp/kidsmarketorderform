@@ -1,40 +1,4 @@
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="generator" content="Form Designer 4.0.551">
-  <title>form</title>
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="css/wireframe-theme.min.css">
-  <script>document.createElement( "picture" );</script>
-  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
-  <script src="js/iframeResizer.contentWindow.min.js"></script>
-  <link rel="stylesheet" href="css/main.css">
-<style>
 
-    .container{
-      display: flex;
-      justify-content: center;
-
-
-    }
-    .alertbox{
-      color: #721c24;
-      background-color: #f8d7da;
-      border-color: #f5c6cb;
-      position: relative;
-      padding: .75rem 1.25rem;
-      margin-bottom: 1rem;
-      border: 1px solid transparent;
-      border-radius: .25rem;
-      width: 50%;
-      align-self: center;
-      display:none;
-    }
-
-  </style>
-</head>
-<body class="no-js">
   <form class="form-container order-form" data-abide="" novalidate="" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSefz9158Q-t3yBaMUAe-RmcPN0RFzgEmTVNz_bL5QewRpRU9g/formResponse" method="post">
     <p class="paragraph header-graf"><span class="paragraph-text-4"><span class="paragraph-text-4">Choose which fruits and vegetables you would like to receive. You have<span class="paragraph-text-3"> six tokens</span> to spend.&nbsp;</span></span></p><label class="label-container short-form">
       <span class="text-element label">Student Name</span><input value="" type="text" name="entry.1955114947" required="required" pattern="^[0-9a-zA-Z]+$" autocomplete="on" placeholder="Your name" maxlength="150" class="studentname">
@@ -298,48 +262,4 @@
   <script src="js/foundation.min.js"></script>
   <script>$(document).foundation();</script>
   
-  </body>
-
-
-<script type="text/javascript">
-  
-$(document).ready(function(){
-  
-  $( "#submitButton" ).click(function(e) {
-        e.preventDefault();
-
-        ctr=0;
-        $(".item").each(function()
-        {   
-            if($(this).val() != 0)
-            {
-              ctr = ctr + +$(this).val();
-            }
-            
-        });
-
-        if(ctr == 6)
-        {
-          $(".alertbox").hide();
-          $(".order-form").submit();
-
-        }
-        else if(ctr > 6)
-        {
-          $(".alertbox").show();
-          $(".alertbox").text("Oops! You don't have enough tokens for this order. Try removing something from your order.")
-        }
-        else{
-          $(".alertbox").show();
-          $(".alertbox").text("You've spent " + ctr +" tokens. Be sure to spend all 6!")
-        }
-
-        
-
-       
-  });
-  
-
-});
-
-</script>
+ 
