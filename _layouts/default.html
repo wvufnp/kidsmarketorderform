@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
+ 
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Form Designer 4.0.551">
+  <title>form</title>
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <script src="js/iframeResizer.contentWindow.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+<style>
+
+    .container{
+      display: flex;
+      justify-content: center;
+
+
+    }
+    .alertbox{
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+      position: relative;
+      padding: .75rem 1.25rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      width: 50%;
+      align-self: center;
+      display:none;
+    }
+
+  </style>
+</head>
+  
+<body class="no-js">
     <div class="container-lg px-3 my-5 markdown-body">
       {% if site.title and site.title != page.title %}
       {% endif %}
@@ -34,4 +71,50 @@
     </script>
     {% endif %}
   </body>
+    
+    
+<script type="text/javascript">
+  
+$(document).ready(function(){
+  
+  $( "#submitButton" ).click(function(e) {
+        e.preventDefault();
+
+        ctr=0;
+        $(".item").each(function()
+        {   
+            if($(this).val() != 0)
+            {
+              ctr = ctr + +$(this).val();
+            }
+            
+        });
+
+        if(ctr == 6)
+        {
+          $(".alertbox").hide();
+          $(".order-form").submit();
+
+        }
+        else if(ctr > 6)
+        {
+          $(".alertbox").show();
+          $(".alertbox").text("Oops! You don't have enough tokens for this order. Try removing something from your order.")
+        }
+        else{
+          $(".alertbox").show();
+          $(".alertbox").text("You've spent " + ctr +" tokens. Be sure to spend all 6!")
+        }
+
+        
+
+       
+  });
+  
+
+});
+
+</script>
+
+    
 </html>
