@@ -1,4 +1,3 @@
-
   <form class="form-container order-form" data-abide="" novalidate="" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSefz9158Q-t3yBaMUAe-RmcPN0RFzgEmTVNz_bL5QewRpRU9g/formResponse" method="post">
     <p class="paragraph header-graf"><span class="paragraph-text-4"><span class="paragraph-text-4">Choosey which fruits and vegetables you would like to receive. You have<span class="paragraph-text-3"> six tokens</span> to spend.&nbsp;</span></span></p><label class="label-container short-form">
       <span class="text-element label">Student Name</span><input value="" type="text" name="entry.1955114947" required="required" pattern="^[0-9a-zA-Z]+$" autocomplete="on" placeholder="Your name" maxlength="150" class="studentname">
@@ -248,7 +247,6 @@
   </form>
   
   <br>
-  jkhk
   <div class="container">
     <div align="center" class="alertbox">
         TEST
